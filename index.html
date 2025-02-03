@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cultural Fest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CultureFest 2023</div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button aria-label="Search">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to CultureFest 2023</h1>
+            <p>Experience the vibrant celebration of arts, music, and diversity!</p>
+            <a href="#tickets" class="cta-button">Buy Tickets Now</a>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1489976908522-aabacf277f49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDIwNTN8MHwxfHNlYXJjaHwxfHxwZXJmb3JtYW5jZXxlbnwwfHx8fDE3Mzg1ODkwNTF8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Cultural festival performance" loading="lazy">
+            </div>
+        </section>
+
+        <section id="events" class="events">
+            <h2>Featured Events</h2>
+            <div class="event-carousel">
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDIwNTN8MHwxfHNlYXJjaHwxfHxjb25jZXJ0fGVufDB8fHx8MTczODQ4MDg5Nnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Music concert" loading="lazy">
+                    <h3>Music Extravaganza</h3>
+                    <p>A night of melodious tunes and rhythmic beats.</p>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1540324155974-7523202daa3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDIwNTN8MHwxfHNlYXJjaHwxfHxEYW5jZXxlbnwwfHx8fDE3Mzg1ODkwNTh8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Dance competition" loading="lazy">
+                    <h3>Dance Showdown</h3>
+                    <p>Witness breathtaking performances from talented dancers.</p>
+                </div>
+                <div class="event-card">
+                    <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDIwNTN8MHwxfHNlYXJjaHwxfHxFeGhpYml0aW9ufGVufDB8fHx8MTczODU4OTA2MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Art exhibition" loading="lazy">
+                    <h3>Art Showcase</h3>
+                    <p>Explore a world of creativity through stunning artworks.</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev" aria-label="Previous event">❮</button>
+                <button class="next" aria-label="Next event">❯</button>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule">
+            <h2>Event Schedule</h2>
+            <div class="schedule-grid">
+                <div class="day">
+                    <h3>Day 1</h3>
+                    <ul>
+                        <li><span class="time">10:00 AM</span> Opening Ceremony</li>
+                        <li><span class="time">12:00 PM</span> Art Exhibition</li>
+                        <li><span class="time">3:00 PM</span> Dance Competition</li>
+                        <li><span class="time">7:00 PM</span> Music Concert</li>
+                    </ul>
+                </div>
+                <div class="day">
+                    <h3>Day 2</h3>
+                    <ul>
+                        <li><span class="time">11:00 AM</span> Photography Workshop</li>
+                        <li><span class="time">2:00 PM</span> Poetry Slam</li>
+                        <li><span class="time">5:00 PM</span> Fashion Show</li>
+                        <li><span class="time">8:00 PM</span> Stand-up Comedy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tickets" class="tickets">
+            <h2>Get Your Tickets</h2>
+            <form id="ticket-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="ticket-type">Ticket Type</label>
+                    <select id="ticket-type" name="ticket-type" required>
+                        <option value="">Select a ticket type</option>
+                        <option value="1-day">1-Day Pass</option>
+                        <option value="2-day">2-Day Pass</option>
+                        <option value="vip">VIP Pass</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+                </div>
+                <button type="submit" class="submit-button">Purchase Tickets</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@culturefest2023.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 University Ave, College Town, CT 12345</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+            <div class="newsletter">
+                <h3>Stay Updated</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 CultureFest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
